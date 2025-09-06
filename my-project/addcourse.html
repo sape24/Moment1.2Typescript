@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startsida</title>
     <script src="src/main.ts" type="module"></script>
+    <title>Lägg till kurs</title>
 </head>
 <body>
-    <header>   
+    <header>  
         <nav class="desktopmenu"> <!--Desktopmenyn-->
             <ul>
                 <li><a href="index.html">Startsida</a></li>
@@ -33,24 +33,28 @@
                 <span class="menu-text">Stäng meny</span>
             </button>
             <ul>
-                 <li><a href="index.html">Startsida</a></li>
+                <li><a href="index.html">Startsida</a></li>
                 <li><a href="addcourse.html">Lägg till kurs</a></li>
             </ul>
         </nav>
     </header>
-    <div id="tablegrid">
-        <input type="text" id="filtertable" placeholder="Sök efter kurskod eller kursnamn">
-        <table id="coursetable">
-            <thead>
-                <tr>
-                    <th id="coursecode">Kurskod</th>
-                    <th id="coursename">Kursnamn</th>
-                    <th id="progression">Progression</th>
-                </tr>
-            </thead>
-            <tbody id="appendEl">
-            </tbody>
-        </table>
+    <div class="formcontainer">
+        <form class="form" method="post" action="/">
+
+            <label for="name">Coursename:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="code">Coursecode:</label>
+            <input type="text" id="code" name="code" required>
+            <br>
+            <label for="syll">Syllabus:</label>
+            <input type="text" id="syll" name="syll" required>
+            <br>
+            <label for="prog">Progression:</label>
+            <input type="text" id="prog" name="prog" required>
+            <br>
+            <input type="submit" id="button" value="Bekräfta">
+        </form>
     </div>
 </body>
 </html>
