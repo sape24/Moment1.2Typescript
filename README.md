@@ -1,4 +1,4 @@
-# Kursapplikation (Moment 1.2 – TypeScript)
+# Praktisk Laboration (Moment 1.2 - TypeScript)
 
 ## Beskrivning
 En enkel webbapplikation för att hantera kurser. 
