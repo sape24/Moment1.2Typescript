@@ -171,6 +171,15 @@ header{
     #tablegrid{
         margin: 0%;
     }
+
+    #coursetable{
+        width: 100%;
+        table-layout: fixed;
+    }
+    #coursetable th, td{
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
 }
 
 .formcontainer{
